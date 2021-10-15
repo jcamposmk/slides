@@ -57,6 +57,23 @@
           </div>
       </div>
   </section>
+    
+    <section>
+    <h4>Estado:</h4>
+    <div>
+      <p>
+          En ocasiones necesitamos guardar datos que cambian durante toda la vida útil de un componente y que causen una renderización de la vista una vez cambiados. Algunos ejemplos:
+      </p>
+      <ul>
+        <li>Si se muestran o no todas las características de un plan (vista de Selección de Planes)</li>
+        <li>Si la contraseña es visible o no (vista de Login)</li>
+        <li>El slide activo de un Carousel (vista de Dashboard)</li>
+        <li>Si un KPI se encuentra deshabilitado (vista de Dashboard)</li>
+        <li>Ó simplemente si un botón de encuentra habilitado o no</li>
+      </ul>
+    </div>
+    <p>Para ello se utiliza el hook: <strong><code>useEffect</code></strong></p>
+  </section>
   
 <section>
   <div class="row border">
@@ -98,7 +115,7 @@
   </div>
 </section>
     
-    <section>
+<section>
   <small>Uso del componente Carousel</small>
   <div class="row border">
     <div class="col-md-6">
