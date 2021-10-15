@@ -58,9 +58,9 @@
       </div>
   </section>
     
-    <section>
-    <h4>Estado</h4>
-    <div>
+ <section>
+    <h4>Hook de estado</h4>
+    <div style="font-size: 24px">
       <p style="text-align: justify">
           En ocasiones necesitamos guardar datos que cambian durante toda la vida útil de un componente y que causen una renderización de la vista una vez cambiados. Algunos ejemplos:
       </p>
@@ -70,6 +70,22 @@
         <li>El slide activo de un Carousel (vista de Dashboard)</li>
         <li>Si un KPI se encuentra deshabilitado (vista de Dashboard)</li>
         <li>Ó simplemente si un botón de encuentra habilitado o no</li>
+      </ul>
+    </div>
+    <p>Para ello se utiliza el hook: <strong><code>useState</code></strong></p>
+  </section>
+    
+  <section>
+    <h4>Hook de efecto</h4>
+    <div style="font-size: 24px">
+      <p style="text-align: justify">
+          En ocasiones necesitamos realizar acciones que no forman parte de la responsabilidad principal del componente, sino que son efectos secundarios. Algunos ejemplos:
+      </p>
+      <ul>
+        <li>Llamar a una Api</li>
+        <li>Crear temporizadores: setInterval ó setTimeout</li>
+        <li>Cambiar el título del documento con <code>document.title</code></li>
+        <li>Suscribirse al evento scroll</li>
       </ul>
     </div>
     <p>Para ello se utiliza el hook: <strong><code>useEffect</code></strong></p>
