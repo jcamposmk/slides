@@ -104,6 +104,20 @@
     </div>
     <p style="font-size: 18px;"><strong>Importante: </strong> React necesita saber que props o estados se están usando en el efecto, para poder operar con los valores mas recientes. Si se omite alguna prop o estado, puede que dentro del efecto se referencie valores de renderizados anteriores.</p>
   </section>
+    
+  <section style="font-size: 24px">
+    <h4>Hook de efecto</h4>
+    <div>
+      <p style="text-align: justify">
+         Hay dos tipos de fectos:
+      </p>
+      <ul>
+        <li><strong>Los que no requieren saneamiento:</strong>: No necesitan realizar niguna acción para liberar los recursos utilizados. Ejemplo: Manipulación manual del DOM o una llamada a una API</li>
+        <li><strong>Los que si requieren saneamiento:</strong> De esta forma, cada vez que cambie name ó lastName React va a llamar a la función de efecto. Ejemplo: Suscripciones a eventos del DOM y temporizadores</li>
+      </ul>
+    </div>
+    <p style="font-size: 18px;"><strong>Importante: </strong> Es necesario liberar los recursos que supongan una carga de memoria para evitar problemas de rendimiento.</p>
+  </section>
   
   <section>
     <h3><code>Implementación del componente Carousel</code></h3>
