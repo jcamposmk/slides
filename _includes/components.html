@@ -98,11 +98,11 @@
          El comportamiento predeterminado es que la función de efecto se ejecute justo después de cada renderizado y al desmontar el componente. Esta ejecución de la función de efecto puede ser condicionado:
       </p>
       <ul>
-        <li>Especificando una array vacio ([ ]): Desta forma se le indica a React que la función de efecto solo será llamada luego de que el componente sea montado en el DOM</li>
-        <li>Especificando un conjunto de dependencias ([ name, lastName ]): De esta forma, cada vez que cambie name ó lastName React va a llamar a la función de efecto.</li>
+        <li><strong>Especificando una array vacio ([ ]):</strong> Desta forma se le indica a React que la función de efecto solo será llamada luego de que el componente sea montado en el DOM</li>
+        <li><strong>Especificando un conjunto de dependencias ([ name, lastName ]):</strong> De esta forma, cada vez que cambie name ó lastName React va a llamar a la función de efecto.</li>
       </ul>
     </div>
-    <p><small><strong>Importante: </strong> React necesita saber que props o estados se están usando en el efecto, para poder operar con los valores mas recientes. Si obviamos registrar alguna prop o estado, puede que referencie valores de renderizados anteriores.</small></p>
+    <p style="font-size: 18px;"><strong>Importante: </strong> React necesita saber que props o estados se están usando en el efecto, para poder operar con los valores mas recientes. Si obviamos registrar alguna prop o estado, puede que referencie valores de renderizados anteriores.</p>
   </section>
   
 <section>
