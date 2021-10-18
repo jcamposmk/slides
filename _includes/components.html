@@ -62,6 +62,31 @@
     <h3><code>Un componente típico es un contador</code></h3>
   </section>
     
+<section>
+  ¿Qué son los hooks?
+  <p>
+    Los hooks fueron introducidos a partir de la versión 16.8 de React y permiten tener estados y otras características de React, en un componente funcional. 
+    Técnicamente son funciones al igual que los componente. Pero nos permiten reutilizar lógica de estado.
+  </p>
+</section>
+
+<section>
+  Reglas de los hooks
+  <ul>
+    <li><strong>Llama Hooks solo en el nivel superior:</strong> No llames Hooks dentro de ciclos, condicionales o funciones anidadas. En cambio, usa siempre Hooks en el nivel superior
+    de tu función en React, antes de cualquier retorno prematuro. Siguiendo esta regla, te aseguras de que los hooks se
+    llamen en el mismo orden cada vez que un componente se renderiza. Esto es lo que permite a React preservar correctamente
+    el estado de los hooks entre multiples llamados a useState y useEffect</li>
+    <li>
+      <strong>Hooks solo en funciones de React</strong> 
+      <ul>
+        <li>Llama Hooks desde componentes funcionales de React.</li>
+        <li>Llama Hooks desde Hooks personalizados</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+    
  <section style="font-size: 24px">
     <h4>Hook de estado</h4>
     <div>
