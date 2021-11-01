@@ -1,11 +1,42 @@
 <section>
   <h2>Hook useReducer</h2>
   <hr/>
-  Es un hook de React para actualizar un estado interno por medio de una función llamada reducer.
-  <ul>
-    <li>Es uno de los hooks integrados por defecto en React</li>
-    <li>Muy similar a useState</li>
-    <li>Nos permite delegar la responsabilidad de la lógica de estado a alguien más</li>
-    <li>Nos permite mantener limpio el componente.</li>
-  </ul>
+  
+  <section>
+    Es un hook de React para actualizar un estado interno por medio de una función llamada reducer.
+    <ul>
+      <li>Es uno de los hooks integrados por defecto en React</li>
+      <li>Muy similar a useState</li>
+      <li>Nos permite delegar la responsabilidad de la lógica de estado a alguien más</li>
+      <li>Nos permite mantener limpio el componente.</li>
+    </ul>
+  </section>
+  
+  <section>
+    ¿Cuándo usarlo?
+    <ul>
+      <li>Cuando se tiene un estado complejo, que implique multiple subvalores o propiedades interrelacionadas</li>
+      <li>Cuando sobre el estado se realizan muchas operaciones diferentes (existen varias formas de actualizar el estado)</li>
+      <li>Cuando el estado siguiente depende del anterior</li>
+    </ul>
+  </section>
+  
+  <section>
+    Ejemplos de casos de uso: 
+    <ul>
+      <li>Una llamada a una api</li>
+      <li>Una lista de tareas</li>
+      <li>Carrito de compra</li>
+    </ul>
+  </section>
+  
+  <section>
+    Llamada a una api de planes
+    <ul>
+      <li>Hay que indicar un tipo de mensaje al usuario que indique la busqueda de los datos (loading: true)</li>
+      <li>Guardar los datos recibidos de la llamada (plans) e indicar que ya se resolvio la llamada (loading: false) </li>
+      <li>En caso de un error, indicar al componente que hubo un error (hasError) e indicar que ya se resolvio la llamada (loading: false)</li>
+    </ul>
+    Cada una de estas operaciones, representan una acción diferente que se puede realizar sobre el estado. 
+  </section>
 </section>
